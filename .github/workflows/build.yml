@@ -1,0 +1,66 @@
+name: build
+on: [push]
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    env:
+      DIR: .
+      FILE: jaspermayone-cv
+    steps:
+      - name: checkout
+        uses: actions/checkout@v4
+      - name: cache apt packages
+        uses: awalsh128/cache-apt-pkgs-action@latest
+        with:
+          packages: imagemagick
+          version: 1.0
+      - name: Install TeX Live
+        uses: zauguin/install-texlive@v4
+        with:
+          packages: >
+            scheme-basic
+            latexmk
+            parskip
+            xcolor
+            geometry
+            tools
+            enumitem
+            supertabular
+            titlesec
+            multirow
+      - name: Build LaTeX with Makefile
+        run: make
+      - name: Convert PDF to JPEG
+        run: |
+          convert-im6.q16 -density 300 ${{ env.DIR }}/${{ env.FILE }}.pdf[0] -quality 90 -flatten jaspermayone-cv.jpeg
+      - name: Prepare deployment
+        run: |
+          mkdir -p _site
+          cp ${{ env.DIR }}/${{ env.FILE }}.pdf _site/jaspermayone-cv.pdf
+          cp jaspermayone-cv.jpeg _site/
+          cp index.html _site/
+          cp CNAME _site/
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+
+  deploy:
+    if: github.ref == 'refs/heads/main'
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

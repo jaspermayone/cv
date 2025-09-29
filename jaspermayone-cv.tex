@@ -1,0 +1,118 @@
+\documentclass[10pt,letterpaper]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[margin=0.6in]{geometry}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{hyperref}
+
+% Format section titles
+\titleformat{\section}{\large\bfseries\uppercase}{}{0em}{}[\titlerule]
+\titlespacing*{\section}{0pt}{10pt}{6pt}
+
+% Remove page numbers
+\pagestyle{empty}
+
+% Customize itemize spacing - use dashes
+\setlist[itemize]{label=--, leftmargin=*, nosep, itemsep=1pt, topsep=3pt}
+
+\begin{document}
+
+% Header
+\begin{center}
+    {\LARGE \textbf{Jasper Mayone}} \\[2pt]
+    me@jaspermayone.com | Boston, MA | \href{https://linkedin.com/in/jaspermayone}{linkedin.com/in/jaspermayone}
+\end{center}
+
+\vspace{-2pt}
+
+% Education
+\section{Education}
+\noindent
+\textbf{Wentworth Institute of Technology | Boston, MA} \hfill Expected Graduation: 08/2025 \\
+Bachelor of Science in Computer Science \\
+% Overall GPA 3.0/4.0, Major GPA 3.2/4.0 \\
+\textit{Related Courses:} Computer Science I, Discrete Math, Foundations of Calculus
+
+\vspace{2pt}
+
+% Skills
+\section{Skills}
+\noindent
+\textbf{Programming Languages:} Javascript, Typescript, Ruby on Rails, Swift, Node.js, Next.js, SQL \\
+\textbf{Software:} Visual Studio Code, Eclipse, Xcode, Adobe Creative Suite, Stripe
+
+\vspace{2pt}
+
+% Projects
+\section{Projects}
+\noindent
+\textbf{Slack Profile CLI | Open Source Tool (Individual)} \hfill 10/2025
+\begin{itemize}
+    \item Built command-line tool for managing Slack user profiles programmatically using Node.js and Ruby
+    \item Published to npm and RubyGems package registries with Homebrew distribution support
+    \item Implemented interactive mode with autocomplete and batch operations for workspace administrators
+\end{itemize}
+
+\vspace{4pt}
+\noindent
+\textbf{Obsidian AI Note Tagger | Obsidian Plugin (Individual)} \hfill 03/2025
+\begin{itemize}
+    \item Developed TypeScript plugin that uses AI to automatically tag notes based on content analysis
+    \item Integrated with Obsidian's API to provide seamless note organization for users
+    \item Published as open source project with 6+ GitHub stars
+\end{itemize}
+
+\vspace{4pt}
+\noindent
+\textbf{Personal Website | Portfolio \& Blog (Individual)} \hfill 06/2024 -- Present
+\begin{itemize}
+    \item Built full-stack personal website using Next.js, TypeScript, and Tailwind CSS
+    \item Implemented dynamic routing, SEO optimization, and responsive design
+    \item Deployed with continuous integration using GitHub Actions
+\end{itemize}
+
+% Experience
+\section{Experience}
+\noindent
+\textbf{Major League Hacking | New York, NY | Summer Engineering Intern} \hfill 05/2025 -- 08/2025
+\begin{itemize}
+    \item Developed and implemented technical integrations between MyMLH identity platform and Discord using Ruby on Rails, enhancing user experience and data synchronization.
+    \item Attended daily standups and bi-weekly sprint planning meetings and retrospectives, collaborating with cross-functional teams to ensure project alignment and timely delivery.
+    \item Implemented automated testing solutions to improve code quality and reduce regression issues.
+    \item Participated in retrospectives, providing feedback and suggestions for process improvements.
+\end{itemize}
+
+\vspace{4pt}
+\noindent
+\textbf{The Hack Foundation | Shelburne, VT | Gap Year / Software Engineer} \hfill 10/2023 -- 07/2024
+\begin{itemize}
+    \item Led and mentored a cross-functional team of developers across several major software projects.
+    \item Designed and developed custom software solutions.
+    \item Built and led community management team of 10, with the goal of improving the number of active members.
+\end{itemize}
+
+\vspace{4pt}
+\noindent
+\textbf{Signal Kitchen | Burlington, VT | Bookshop Manager \& Assistant to Events Director} \hfill 02/2023 -- 02/2024
+\begin{itemize}
+    \item Leveraged event platforms to coordinate registration and check-in for thousands of attendees at flagship events.
+    \item Streamlined pre/post event operations through database management and organization.
+    \item Coordination of vendor relationships while managing shipping logistics for event bookstore.
+    \item Developed and maintained inventory management and point of sale system for bookstore.
+    \item Assist guests during event, as well as on-site support for overnight VIP guests.
+\end{itemize}
+
+
+% future note - hackwit start 10/2025
+
+% Activities
+\section{Activities}
+\noindent
+\textbf{WITCC (Wentworth's student run coding club) | Treasurer \& Member} \hfill 09/2025 - Present
+\begin{itemize}
+    \item Managed Club budget
+    \item Sat on E-Board which included event/meeting coordination and other leadership tasks
+\end{itemize}
+
+\end{document}
