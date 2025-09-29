@@ -19,5 +19,3 @@ make # build the pd
 make clean # rm the latex steps
 make distclean # rm the output
 ```
-
-> !NOTE workflow is to open up `cv.tex` in neovim and then use `:!make` to build the pdf and have it auto reload in a pdf viewer.
