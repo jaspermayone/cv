@@ -2,7 +2,7 @@
 
 This is my CV and is adapted from the [jitinnair1/autoCV](https://github.com/jitinnair1/autoCV) project.
 
-![preview of the cv](https://cv.jaspermayone.com/cv.jpeg)
+![preview of the cv](https://cv.jaspermayone.com/jaspermayone-cv.jpeg)
 
 ### Setup
 
