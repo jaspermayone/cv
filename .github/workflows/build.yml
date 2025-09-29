@@ -19,15 +19,13 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-      - name: Cache APT packages
-        uses: awalsh128/cache-apt-pkgs-action@latest
-        with:
-          packages: imagemagick latexmk texlive-latex-recommended texlive-latex-extra texlive-fonts-recommended
-          version: 1.0
       - name: Install packages
         run: |
           sudo apt-get update
-          sudo apt-get install -y imagemagick latexmk texlive-latex-recommended texlive-latex-extra texlive-fonts-recommended
+          # Install packages individually to handle dependencies better
+          sudo apt-get install -y imagemagick
+          sudo apt-get install -y --fix-broken texlive-base texlive-binaries
+          sudo apt-get install -y latexmk texlive-latex-recommended texlive-latex-extra texlive-fonts-recommended
       - name: Build LaTeX with Makefile
         run: make
       - name: Convert PDF to JPEG
