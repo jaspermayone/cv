@@ -73,7 +73,7 @@ pick() {
     --color="prompt:cyan,pointer:cyan,marker:green,border:blue,header:yellow"
     --preview="$preview_cmd"
     --preview-window="right:55%:wrap:hidden"
-    --bind="right:toggle-preview,left:toggle-preview"
+    --bind="right:toggle-preview,left:toggle-preview,q:abort"
   )
   if [[ "$mode" == "multi" ]]; then
     opts+=(--multi --bind="tab:toggle"
@@ -83,6 +83,25 @@ pick() {
   fi
 
   printf '%s\n' "${files[@]}" | fzf "${opts[@]}" || true
+}
+
+append_skills() {
+  # Concatenates skill lines directly — no inter-item spacing, no overlap
+  local dir="$1"; shift
+  local -a items=("$@")
+  local wrote=false
+
+  for item in "${items[@]}"; do
+    [[ -z "$item" ]] && continue
+    local f="$dir/$item.tex"
+    if [[ ! -f "$f" ]]; then warn "Missing snippet: $item"; continue; fi
+    if [[ "$wrote" == "false" ]]; then
+      printf '\n\\section{Skills}\n\\noindent\n' >> "$OUTPUT"
+      wrote=true
+    fi
+    cat "$f" >> "$OUTPUT"
+  done
+  [[ "$wrote" == "true" ]] && printf '\n\\vspace{2pt}\n' >> "$OUTPUT"
 }
 
 append_section() {
@@ -174,7 +193,7 @@ cat "$TEMPLATES/header.tex" > "$OUTPUT"
 
 append_section "Education"  "$SNIPPETS/education"  "${EDU[@]:-}"
 
-append_section "Skills" "$SNIPPETS/skills" "${SKILLS[@]:-}"
+append_skills "$SNIPPETS/skills" "${SKILLS[@]:-}"
 
 append_section "Projects"   "$SNIPPETS/projects"   "${PROJ[@]:-}"
 append_section "Experience" "$SNIPPETS/experience" "${EXP[@]:-}"

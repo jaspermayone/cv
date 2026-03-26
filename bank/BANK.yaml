@@ -198,25 +198,36 @@ education:
     snippet: snippets/education/harwood-hs.tex
 
 skills:
-  - id: skills-tech
-    description: Tech-focused (current CV) — languages and software tools
+  # Atomic skill lines — mix and match freely, no overlap
+  - id: programming
+    description: Programming Languages line (JS, TS, Ruby, Swift, Node, Next, SQL)
     tags: [tech, software]
-    snippet: snippets/skills/skills-tech.tex
+    snippet: snippets/skills/programming.tex
 
-  - id: skills-full
-    description: Full skill set — tech + AV/media + event management
-    tags: [tech, av, events, hospitality, media]
-    snippet: snippets/skills/skills-full.tex
+  - id: software
+    description: Software tools (VS Code, Xcode, Adobe CC, Stripe)
+    tags: [tech, software]
+    snippet: snippets/skills/software.tex
 
-  - id: skills-av-events
-    description: AV/Events-focused — lighting, video, event coordination
-    tags: [av, events, hospitality]
-    snippet: snippets/skills/skills-av-events.tex
+  - id: fabrication
+    description: 3D printing and hardware (PrusaSlicer, Cura, Bambu, QIDI rebuild)
+    tags: [tech, fabrication]
+    snippet: snippets/skills/fabrication.tex
 
-  - id: skills-tech-fabrication
-    description: Tech + fabrication — adds 3D printing/hardware to the tech skill set
-    tags: [tech, software, fabrication]
-    snippet: snippets/skills/skills-tech-fabrication.tex
+  - id: av-technical
+    description: AV/media technical skills (video, drone/camera, lighting, forensics)
+    tags: [av, media, tech]
+    snippet: snippets/skills/av-technical.tex
+
+  - id: events
+    description: Event coordination, guest services, PO/rental management
+    tags: [events, hospitality, admin]
+    snippet: snippets/skills/events.tex
+
+  - id: other
+    description: Productivity tools (Google Sheets, Airtable, Eventbrite, Sched, Zoom)
+    tags: [admin, events]
+    snippet: snippets/skills/other.tex
 
 activities:
   - id: wit-coding-club
