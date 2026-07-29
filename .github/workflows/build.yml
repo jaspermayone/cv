@@ -49,7 +49,6 @@ jobs:
           cp ${{ env.DIR }}/${{ env.FILE }}.pdf _site/jaspermayone-cv.pdf
           cp jaspermayone-cv.jpeg _site/
           cp index.html _site/
-          cp CNAME _site/
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
 
