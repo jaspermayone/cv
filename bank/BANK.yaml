@@ -3,13 +3,39 @@
 # Tags: tech, software, leadership, support, events, hospitality, av, media, sales, admin, aviation, fabrication
 
 experience:
+  - id: wit-dts
+    org: Wentworth Institute of Technology
+    location: Boston, MA
+    role: Digital Innovation Support Specialist
+    dates: 05/2026 -- Present
+    tags: [tech, software, support]
+    status: current
+    snippet: snippets/experience/wit-dts.tex
+
+  - id: wit-mailroom
+    org: Wentworth Institute of Technology
+    location: Boston, MA
+    role: Mailroom Clerk
+    dates: 10/2025 -- 05/2026
+    tags: [admin, support]
+    snippet: snippets/experience/wit-mailroom.tex
+
   - id: mlh-intern
     org: Major League Hacking
-    location: New York, NY
-    role: Summer Engineering Intern
+    location: Remote
+    role: Software Engineer Intern
     dates: 05/2025 -- 08/2025
     tags: [tech, software, leadership]
     snippet: snippets/experience/mlh-intern.tex
+
+  - id: patchwork-labs
+    org: Patchwork Labs Inc.
+    location: Vermont
+    role: Founder & Director of Programs
+    dates: 07/2025 -- Present
+    tags: [tech, software, leadership]
+    status: current
+    snippet: snippets/experience/patchwork-labs.tex
 
   - id: hack-foundation
     org: The Hack Foundation
@@ -108,6 +134,14 @@ experience:
     snippet: snippets/experience/mrvtv.tex
 
 projects:
+  - id: homelab
+    name: Homelab
+    type: Multi-Tenant Infrastructure
+    dates: 08/2026 -- Present
+    tags: [tech, support, infrastructure]
+    status: current
+    snippet: snippets/projects/homelab.tex
+
   - id: rfid-cabinet
     name: RFID Cabinet Access Control System
     type: Hardware/Software
@@ -128,12 +162,12 @@ projects:
     type: TypeScript Server
     dates: 01/2026
     tags: [tech, software]
-    status: current
+    status: removed-from-cv
     snippet: snippets/projects/strings-server.tex
 
   - id: wit-calendar
-    name: WIT Calendar Backend
-    type: Ruby on Rails API
+    name: WIT-Calendar
+    type: Rails API + Chrome Extension
     dates: 10/2025 -- Present
     tags: [tech, software]
     status: current
@@ -176,7 +210,7 @@ education:
     school: Wentworth Institute of Technology
     location: Boston, MA
     degree: Bachelor of Science in Computer Science
-    dates: Expected Graduation 08/2029
+    dates: Expected Graduation 08/2028
     tags: [tech, software]
     status: current
     snippet: snippets/education/wentworth.tex
@@ -198,6 +232,31 @@ education:
     snippet: snippets/education/harwood-hs.tex
 
 skills:
+  - id: languages-frameworks
+    description: Combined Languages & Frameworks line, used on the main CV to save a line
+    tags: [tech, software]
+    snippet: snippets/skills/languages-frameworks.tex
+
+  - id: languages
+    description: Languages line (Ruby, TS, JS, Java, Python, Swift, SQL, C, Nix)
+    tags: [tech, software]
+    snippet: snippets/skills/languages.tex
+
+  - id: frameworks
+    description: Frameworks line (Rails, Node, Next, Hotwire, RSpec)
+    tags: [tech, software]
+    snippet: snippets/skills/frameworks.tex
+
+  - id: infrastructure
+    description: Infrastructure line (Linux, NixOS, Docker, Proxmox, AD, Ansible, GH Actions, Grafana)
+    tags: [tech, support, infrastructure]
+    snippet: snippets/skills/infrastructure.tex
+
+  - id: platforms
+    description: Platforms line (ServiceNow, Power Platform, M365, Google Cloud, Stripe)
+    tags: [tech, support, admin]
+    snippet: snippets/skills/platforms.tex
+
   # Atomic skill lines — mix and match freely, no overlap
   - id: programming
     description: Programming Languages line (JS, TS, Ruby, Swift, Node, Next, SQL)
@@ -232,7 +291,7 @@ skills:
 activities:
   - id: wit-coding-club
     org: Wentworth University Coding Club
-    role: Treasurer & Member
+    role: Member (former Treasurer & E-Board)
     dates: 09/2025 -- Present
     tags: [tech, leadership]
     status: current
@@ -240,7 +299,7 @@ activities:
 
   - id: wit-robotics
     org: Wentworth Robotics Club
-    role: Treasurer & Software Team Lead
+    role: Member (former Treasurer & Software Team Lead)
     dates: 09/2025 -- Present
     tags: [tech, leadership]
     status: current
