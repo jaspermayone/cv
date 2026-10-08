@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1791426157.7726 "jaspermayone-cv.tex" "jaspermayone-cv.pdf" "jaspermayone-cv" 1791426158.18266 0
+["pdflatex"] 1791426369.97315 "jaspermayone-cv.tex" "jaspermayone-cv.pdf" "jaspermayone-cv" 1791426370.30018 0
   "/nix/store/g37vymalybp6p4cbhrixxwjx6q1cd3hw-texlive-2025-r78234-final-env-texmfdist/fonts/map/fontname/texfonts.map" 1 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/nix/store/g37vymalybp6p4cbhrixxwjx6q1cd3hw-texlive-2025-r78234-final-env-texmfdist/fonts/tfm/public/cm/cmbx10.tfm" 1 1328 c834bbb027764024c09d3d2bf908b5f0 ""
   "/nix/store/g37vymalybp6p4cbhrixxwjx6q1cd3hw-texlive-2025-r78234-final-env-texmfdist/fonts/tfm/public/cm/cmbx12.tfm" 1 1324 c910af8c371558dc20f2d7822f66fe64 ""
@@ -46,9 +46,9 @@
   "/nix/store/gdib4y24v4ixk9icqj9n02lnr22qwxga-texlive-2025-r78234-final-env/share/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1 5541489 e10bd17132c9ee307bf5dd5afbe2aae3 ""
   "/nix/store/gdib4y24v4ixk9icqj9n02lnr22qwxga-texlive-2025-r78234-final-env/share/texmf-var/web2c/pdftex/pdflatex.fmt" 1 3637258 ebde674263ba655ac615eafec8be7616 ""
   "/nix/store/gdib4y24v4ixk9icqj9n02lnr22qwxga-texlive-2025-r78234-final-env/share/texmf-var/web2c/texmf.cnf" 1 44263 8e82b530a623c886b722c89b924536a3 ""
-  "jaspermayone-cv.aux" 1791426158.15282 690 531af5cc95be016059a6160a10792c17 "pdflatex"
-  "jaspermayone-cv.out" 1791426158.1534 430 e67af3587ed84b64c4bd23fe37ba62b0 "pdflatex"
-  "jaspermayone-cv.tex" 1791426157.08238 5175 b73914ddc621c91b51fc6f62826ce0d7 ""
+  "jaspermayone-cv.aux" 1791426370.27758 690 531af5cc95be016059a6160a10792c17 "pdflatex"
+  "jaspermayone-cv.out" 1791426370.27794 430 e67af3587ed84b64c4bd23fe37ba62b0 "pdflatex"
+  "jaspermayone-cv.tex" 1791426368.47032 5201 bdb0aa0bff1069dac75e554835056605 ""
   (generated)
   "jaspermayone-cv.aux"
   "jaspermayone-cv.log"
