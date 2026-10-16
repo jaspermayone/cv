@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1792172915.40394 "jaspermayone-cv.tex" "jaspermayone-cv.pdf" "jaspermayone-cv" 1792172915.55197 0
+["pdflatex"] 1792174279.78991 "jaspermayone-cv.tex" "jaspermayone-cv.pdf" "jaspermayone-cv" 1792174279.96372 0
   "/nix/store/0j3sxy76mdrmccnbk6j3w5jwp1l14h1s-texlive-combined-2025/share/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1 76161 168bf41e35912a3eef90ada9dc4ac37a ""
   "/nix/store/0j3sxy76mdrmccnbk6j3w5jwp1l14h1s-texlive-combined-2025/share/texmf-var/web2c/pdftex/pdflatex.fmt" 1 2286618 3600e73c303c2bd42420bc9442aa5789 ""
   "/nix/store/0j3sxy76mdrmccnbk6j3w5jwp1l14h1s-texlive-combined-2025/share/texmf-var/web2c/texmf.cnf" 1 44007 2793e6011e54b37f1121a1496be6d8f9 ""
@@ -45,9 +45,9 @@
   "/nix/store/1kclfjg2q2aq1di083yfbdfw3w898plj-texlive-combined-2025-texmfdist/tex/latex/rerunfilecheck/rerunfilecheck.sty" 1 9684 a33a14b82ce60d6e77cb9be689d79ee6 ""
   "/nix/store/1kclfjg2q2aq1di083yfbdfw3w898plj-texlive-combined-2025-texmfdist/tex/latex/titlesec/titlesec.sty" 1 48766 87a17a4ef312a39cd43896e34a679a56 ""
   "/nix/store/1kclfjg2q2aq1di083yfbdfw3w898plj-texlive-combined-2025-texmfdist/tex/latex/url/url.sty" 1 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
-  "jaspermayone-cv.aux" 1792172915.53272 690 531af5cc95be016059a6160a10792c17 "pdflatex"
-  "jaspermayone-cv.out" 1792172915.5332 430 e67af3587ed84b64c4bd23fe37ba62b0 "pdflatex"
-  "jaspermayone-cv.tex" 1792172791.24821 5040 747fa1d26fcdae545c94fe445fabd752 ""
+  "jaspermayone-cv.aux" 1792174279.94446 690 531af5cc95be016059a6160a10792c17 "pdflatex"
+  "jaspermayone-cv.out" 1792174279.94474 430 e67af3587ed84b64c4bd23fe37ba62b0 "pdflatex"
+  "jaspermayone-cv.tex" 1792174278.25004 5031 22db90f8883324aeb915bf295d568909 ""
   (generated)
   "jaspermayone-cv.aux"
   "jaspermayone-cv.log"
